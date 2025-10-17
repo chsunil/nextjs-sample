@@ -30,7 +30,7 @@ const Footer: FC = () => {
             <div className="md:pe-7.5">
               <Link href="#">
                 <Image
-                  src="/images/logo/logo-white.svg"
+                  src="/images/logo/logo3.png"
                   alt="Logo"
                   width={151}
                   height={32}

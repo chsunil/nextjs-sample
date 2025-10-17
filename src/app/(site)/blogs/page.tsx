@@ -1,6 +1,6 @@
 import BlogList from "@/app/components/BlogList";
 import HeroSub from "@/app/components/SharedComponent/HeroSub";
-import { getAllPosts } from "@/utils/markdown";
+import { getWordPressPosts } from "@/utils/wordpress";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,8 +8,8 @@ export const metadata: Metadata = {
     "Blog Grids | Saturn",
 };
 
-const Blog = () => {
-  const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
+const Blog = async () => {
+  const posts = await getWordPressPosts();
 
   const breadcrumbLinks = [
     { href: "/", text: "Home" },

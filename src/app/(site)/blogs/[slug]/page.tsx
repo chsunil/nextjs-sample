@@ -1,5 +1,4 @@
-import { getAllPosts, getPostBySlug } from "@/utils/markdown";
-import markdownToHtml from "@/utils/markdownToHtml";
+import { getWordPressPostBySlug } from "@/utils/wordpress";
 import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,13 +8,7 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: any) {
-  const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
-  const post = getPostBySlug(params.slug, [
-    "title",
-    "author",
-    "content",
-    "metadata",
-  ]);
+  const post = await getWordPressPostBySlug(params.slug);
 
   const siteName = process.env.SITE_NAME || "Your Site Name";
   const authorName = process.env.AUTHOR_NAME || "Your Author Name";
@@ -61,17 +54,13 @@ export async function generateMetadata({ params }: any) {
 }
 
 export default async function Post({ params }: any) {
-  const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
-  const post = getPostBySlug(params.slug, [
-    "title",
-    "author",
-    "authorImage",
-    "content",
-    "coverImage",
-    "date",
-  ]);
+  const post = await getWordPressPostBySlug(params.slug);
 
-  const content = await markdownToHtml(post.content || "");
+  if (!post) {
+    return <div>Post not found</div>;
+  }
+
+  const content = post.content || "";
 
   return (
     <>
@@ -93,7 +82,7 @@ export default async function Post({ params }: any) {
             </div>
             <div className="flex items-center md:justify-center justify-start gap-6 col-span-4 pt-4 md:pt-0">
               <Image
-                src={post.authorImage}
+                src={"/images/profile.png"}
                 alt="image"
                 className="bg-no-repeat bg-contain inline-block rounded-full !w-20 !h-20"
                 width={40}
@@ -103,7 +92,7 @@ export default async function Post({ params }: any) {
               />
               <div className="">
                 <span className="text-xl font-bold text-midnight_text dark:text-white">
-                  Silicaman
+                  Sunil CH
                 </span>
                 <p className="text-xl text-gray dark:text-white">Author</p>
               </div>
@@ -116,7 +105,7 @@ export default async function Post({ params }: any) {
           <div className="grid-cols-3 grid">
             <div className="z-20 mb-24 max-h-[448px] overflow-hidden rounded col-span-3">
               <Image
-                src={post.coverImage}
+                src={post.coverImage!}
                 alt="image"
                 width={1170}
                 height={766}

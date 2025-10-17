@@ -64,7 +64,7 @@ const ForgotPassword = () => {
                     className="dark:hidden"
                   />
                   <Image
-                    src="/images/logo/logo-white.svg"
+                    src="/images/logo/logo3.png"
                     alt="logo"
                     width={140}
                     height={30}

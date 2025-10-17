@@ -82,7 +82,7 @@ export default async function Post({ params }: any) {
             </div>
             <div className="flex items-center md:justify-center justify-start gap-6 col-span-4 pt-4 md:pt-0">
               <Image
-                src={"/images/profile.png"}
+                src={post.authorImage!}
                 alt="image"
                 className="bg-no-repeat bg-contain inline-block rounded-full !w-20 !h-20"
                 width={40}
@@ -92,7 +92,7 @@ export default async function Post({ params }: any) {
               />
               <div className="">
                 <span className="text-xl font-bold text-midnight_text dark:text-white">
-                  Sunil CH
+                  {post.authorName}
                 </span>
                 <p className="text-xl text-gray dark:text-white">Author</p>
               </div>

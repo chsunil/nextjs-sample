@@ -24,7 +24,6 @@ export async function getWordPressPostBySlug(slug: string): Promise<Blog | null>
   }
 
   const post = posts[0];
-
   return {
     id: post.id,
     title: post.title.rendered,
@@ -33,5 +32,7 @@ export async function getWordPressPostBySlug(slug: string): Promise<Blog | null>
     coverImage: post._embedded["wp:featuredmedia"]?.[0]?.source_url || "/images/blog/blog_1.webp",
     date: post.date,
     content: post.content.rendered,
+    authorName: post._embedded.author[0].name,
+    authorImage: post._embedded.author[0].avatar_urls?.['96'] || '/images/profile.png',
   };
 }

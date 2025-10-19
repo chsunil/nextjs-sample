@@ -37,13 +37,13 @@ const Hero: React.FC = () => {
               className="relative before:content-[''] before:absolute before:h-full before:w-full before:bg-[url('/images/hero/leftside-backlayer-icons.svg')] before:-left-9.375 before:bg-contain before:bg-no-repeat before:-z-1"
             >
               <h1 className="text-dark dark:text-white mb-0 md:text-65 sm:text-4xl text-3xl">
-                Build Innovative Apps For Your Business Today
+               🚀 Build Modern Apps & Websites That Perform.
               </h1>
               <p className="text-lg font-medium text-black/50 dark:text-white/50 sm:py-1.875 py-5">
-                Build smarter, move faster, and grow stronger with custom apps designed to support your business every step of the way.
+               From WordPress to Next.js — I create fast, secure, and scalable digital experiences.
               </p>
               <Link href="/services" className="sm:px-2.188 px-4 sm:py-1.125 py-2 rounded-lg text-base hover:cursor-pointer font-semibold bg-primary text-white hover:bg-orange-600 duration-500 inline-block sm:mb-0 mb-4">
-                Browse our services
+                Get a Free Consultation
               </Link>
             </motion.div>
           </div>

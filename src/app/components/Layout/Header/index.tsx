@@ -122,7 +122,7 @@ const Header: React.FC = () => {
               className="dark:hidden block"
             />
           </button>
-          {user?.user || session?.user ? (
+          {/* {user?.user || session?.user ? (
             <>
               <div className="relative group flex items-center justify-center">
                 <Image
@@ -204,7 +204,7 @@ const Header: React.FC = () => {
             <span className="block w-6 h-0.5 bg-primary dark:bg-primary"></span>
             <span className="block w-6 h-0.5 bg-primary dark:bg-primary mt-1.5"></span>
             <span className="block w-6 h-0.5 bg-primary dark:bg-primary mt-1.5"></span>
-          </button>
+          </button> */}
         </div>
       </div>
       {navbarOpen && (

@@ -3,11 +3,11 @@ import { NextResponse } from 'next/server'
 const ServicesData = [
     {
         icon: "solar:notebook-bookmark-linear",
-        title: "EdTech Apps",
+        title: "Smart EdTech Solutions",
         slug: "edtech-apps",
         image: "/images/ServiceDetail/EdTechAppImage.png",
         description:
-            "Powerful tools that enhance learning experiences with interactive content, virtual classrooms, and performance tracking.",
+            "Design and develop engaging learning platforms that make education interactive and accessible. From custom LMS systems to virtual classrooms and quiz modules, I help institutions and startups deliver smooth digital learning experiences. Every app is built for speed, usability, and seamless integration with modern education tools.",
         detail:
             "Develop comprehensive EdTech applications designed to transform the learning experience for students and educators. These apps offer seamless integration of multimedia tools, course management systems, real-time communication features, and advanced assessment modules. The platform enables instructors to create personalized lesson plans and interactive quizzes, while students can track their progress and engage with educational materials in a dynamic, user-friendly interface. Features such as video and audio integration, real-time feedback, and gamified learning make these apps ideal for modern classrooms and online learning environments.",
         features: [
@@ -40,11 +40,11 @@ const ServicesData = [
     },
     {
         icon: "solar:cart-3-linear",
-        title: "eCommerce Apps",
+        title: "Next-Gen eCommerce Stores",
         slug: "ecommerce-apps",
         image: "/images/ServiceDetail/eCommerceImage.png",
         description:
-            "Seamlessly manage online stores, process payments, and optimize customer experiences to drive sales and conversions.",
+            "Build lightning-fast, secure, and conversion-focused online stores using WordPress, WooCommerce, or custom APIs. Whether you’re launching a boutique shop or scaling an enterprise brand, I ensure smooth payments, responsive layouts, and SEO-ready architecture that boosts engagement and sales.",
         detail:
             "Create robust, scalable eCommerce applications that cater to the growing demands of online retail. These apps offer a wide range of features such as personalized product recommendations, real-time inventory management, and multi-currency payment gateways. With a focus on providing an intuitive user interface, secure checkout processes, and an integrated shipping solution, these apps are designed to enhance the customer experience. Admins can manage product listings, customer orders, and payment processing with ease, while shoppers benefit from a streamlined and efficient purchasing process that includes customer reviews, wishlists, and order tracking.",
         features: [
@@ -77,11 +77,11 @@ const ServicesData = [
     },
     {
         icon: "solar:video-frame-replace-linear",
-        title: "CRM Apps",
+        title: "Custom CRM Solutions",
         slug: "crm-apps",
         image: "/images/ServiceDetail/CRMAppsImage.png",
         description:
-            "Track leads, manage customer data, and boost engagement with smart tools that streamline sales and support workflows.",
+            "Streamline your business with smart CRM systems that automate lead management, client tracking, and reporting. Built using modern frameworks, my CRMs simplify data flow, integrate with existing tools, and help teams stay connected — empowering smarter business decisions every day.",
         detail:
             "Build powerful CRM and SaaS solutions that provide businesses with tools to efficiently manage customer relationships, streamline sales processes, and enhance team productivity. These applications allow organizations to track customer interactions, automate lead nurturing workflows, and create targeted marketing campaigns. With features like contact management, sales funnel visualization, and custom reporting, businesses can gain deeper insights into their performance and customer behavior. Integration with popular third-party platforms, real-time collaboration tools, and analytics dashboards further empower teams to improve customer satisfaction and optimize sales strategies.",
         features: [
@@ -114,11 +114,11 @@ const ServicesData = [
     },
     {
         icon: "solar:stethoscope-linear",
-        title: "Health Apps",
+        title: "Headless WP & Next.js",
         slug: "health-apps",
         image: "/images/ServiceDetail/HealthAppImage.png",
         description:
-            "Empower users to monitor health, book appointments, and access care with secure, user-friendly medical tools and features.",
+            "Combine WordPress flexibility with the blazing performance of Next.js. I create hybrid, API-driven websites that load faster, scale easily, and deliver superior UX. Perfect for businesses wanting a modern tech stack without losing WordPress’s ease of content management.",
         detail:
             "Create user-friendly and feature-rich health and fitness applications that motivate users to lead healthier lifestyles. These apps provide a holistic approach to fitness by offering workout logs, nutrition tracking, and personalized fitness goals. Users can track their progress through detailed analytics and receive workout recommendations tailored to their fitness levels and objectives. Integration with wearables such as fitness trackers and smartwatches allows for real-time health monitoring, while social features enable users to connect with a community for added motivation. From step tracking to meal planning, these apps provide everything users need to stay on track with their health journey.",
         features: [

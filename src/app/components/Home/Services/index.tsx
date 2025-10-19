@@ -37,11 +37,11 @@ const Services = () => {
       >
         <motion.div {...TopAnimation} className="mb-17">
           <p className="text-black/50 dark:text-white/50 text-lg lg:text-start text-center">
-            Services We Provide
+            💼 Smart Solutions for Every Business
           </p>
           <div className="flex lg:flex-row flex-col lg:gap-0 gap-10 justify-between items-center mt-5">
             <h2 className="font-semibold md:text-6xl sm:text-40 text-3xl text-black dark:text-white lg:text-start text-center">
-              Innovative Apps for <br /> Your Business Needs
+             Tech that helps you grow — built clean, fast, and future-ready.
             </h2>
             <Link
               href="/services"

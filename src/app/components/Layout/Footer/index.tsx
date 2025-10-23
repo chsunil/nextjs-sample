@@ -23,9 +23,9 @@ const Footer: FC = () => {
     fetchData()
   }, [])
   return (
-    <footer className="bg-Dark-primary dark:bg-darklight py-17 pb-6">
+    <footer className="bg-Dark-primary dark:bg-darklight">
       <div className="container mx-auto lg:max-w-xl md:max-w-screen-md px-4">
-        <div className="grid grid-cols-12 sm:gap-1.875 gap-5">
+        {/* <div className="grid grid-cols-12 sm:gap-1.875 gap-5">
           <div className="lg:col-span-4 col-span-12">
             <div className="md:pe-7.5">
               <Link href="#">
@@ -130,7 +130,7 @@ const Footer: FC = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="flex md:flex-nowrap flex-wrap gap-6 items-center justify-between sm:pt-17 pt-10">
           <p className="text-lg font-medium text-white/50 ">
             @2025 - All Rights Reserved by{" "}

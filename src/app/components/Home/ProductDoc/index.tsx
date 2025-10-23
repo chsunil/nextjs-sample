@@ -77,6 +77,8 @@ const ProductDoc = () => {
                 width={600}
                 height={400}
                 className="w-full h-full rounded-2xl overflow-hidden"
+                quality={80}
+                loading='lazy'
               />
             </div>
           ))}

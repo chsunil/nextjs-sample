@@ -66,21 +66,21 @@ const DocText = [
 ];
 
 const Portfolio = [
-    {
-        image: "/images/productdoc/Portfolio-1.jpg",
+   {
+      "title": "SassCandy Website",
+      "category": "Typescript",
+      "url": "https://saascandy.com"
     },
     {
-        image: "/images/productdoc/Portfolio-2.jpg",
+      "title": "Next.js Official Site",
+      "category": "Typescript",
+      "url": "https://nextjs.org"
     },
     {
-        image: "/images/productdoc/Portfolio-3.jpg",
-    },
-    {
-        image: "/images/productdoc/Portfolio-4.jpg",
-    },
-    {
-        image: "/images/productdoc/Portfolio-5.jpg",
-    },
+      "title": "WordPress News",
+      "category": "WordPress",
+      "url": "https://wordpress.org"
+    }
 ];
 
 const MonthlyPlans = [
